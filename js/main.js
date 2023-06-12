@@ -7,10 +7,8 @@ createInertiaApp({
   resolve: name => {
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true });
     console.log(pages, name);
-    if (name === "inertia.html") {
-      return pages["./Pages/Index.vue"]
-    }
-    return pages[`./Pages/${name}.vue`]
+    const stripped = name.slice(0, -5);
+    return pages[`./Pages/${stripped}.vue`]
   },
   setup({ el, App, props, plugin }) {
     createApp({ render: () => h(App, props) })

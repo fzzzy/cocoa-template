@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 
-INERTIA_LAYOUT = 'inertia.html'
+INERTIA_LAYOUT = 'base.html'
 DJANGO_VITE_ASSETS_PATH = ''
 DJANGO_VITE_DEV_SERVER_PORT = 5173
 DJANGO_VITE_DEV_MODE = True
