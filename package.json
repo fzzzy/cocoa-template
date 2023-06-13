@@ -1,7 +1,7 @@
 {
-  "name": "sesqui",
+  "name": "cocoa_template",
   "version": "0.1",
-  "description": "sesquipedilian",
+  "description": "cocoa_template",
   "scripts": {
     "runserver": "python3 manage.py runserver",
     "vite": "vite",
