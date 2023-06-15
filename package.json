@@ -3,7 +3,7 @@
   "version": "0.1",
   "description": "cocoa_template",
   "scripts": {
-    "runserver": "PYTHONPATH=. gunicorn --reload -w 4 flask_server:app",
+    "runserver": "PYTHONPATH=. gunicorn --reload flask_server:app",
     "vite": "vite",
     "build": "vite build",
     "start": "concurrently npm:runserver npm:vite"

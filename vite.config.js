@@ -11,6 +11,11 @@ export default defineConfig({
       input: {
         main: './js/main.js',
       }
+    },
+  },
+  server: {
+    watch: {
+      ignored: ['!**/*.py'],
     }
   },
   plugins: [vue()],

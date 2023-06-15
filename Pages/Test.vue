@@ -6,5 +6,5 @@ defineProps({ foo: String })
 
 <template>
     <Head title="Test" />
-    <p>foo? {{ foo }}</p>
+    <p>foo? {{ foo }}!</p>
 </template>
