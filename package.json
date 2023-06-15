@@ -3,8 +3,9 @@
   "version": "0.1",
   "description": "cocoa_template",
   "scripts": {
-    "runserver": "python3 manage.py runserver",
+    "runserver": "PYTHONPATH=. gunicorn --reload -w 4 flask_server:app",
     "vite": "vite",
+    "build": "vite build",
     "start": "concurrently npm:runserver npm:vite"
   },
   "watchreload": {
